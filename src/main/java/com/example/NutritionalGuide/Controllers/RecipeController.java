@@ -11,6 +11,10 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/recipes")
+@CrossOrigin(origins = {
+        "http://localhost:5173",
+        "https://healthcaresyst.netlify.app"
+})
 public class RecipeController {
     @Autowired
     private RecipeRepo repo;
